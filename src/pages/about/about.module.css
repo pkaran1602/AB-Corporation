@@ -40,7 +40,7 @@
 
 .heroContent h2 {
   margin: 0;
-  font-size: clamp(34px, 5vw, 64px);
+  font-size: clamp(2rem, 4.2vw, 3rem);
   font-family: "Space Grotesk", "Segoe UI", sans-serif;
   line-height: 1.05;
 }
@@ -48,7 +48,7 @@
 .heroContent p {
   margin: 12px 0 0;
   color: #dde9f7;
-  font-size: 18px;
+  font-size: clamp(0.95rem, 1.25vw, 1.05rem);
 }
 
 .contentWrap {
@@ -72,8 +72,8 @@
 
 .introBlock h3 {
   margin: 0 0 14px;
-  font-size: clamp(30px, 4vw, 52px);
-  line-height: 1;
+  font-size: clamp(1.5rem, 3vw, 2.2rem);
+  line-height: 1.1;
   text-transform: uppercase;
   font-family: "Space Grotesk", "Segoe UI", sans-serif;
 }
@@ -81,7 +81,7 @@
 .introBlock p {
   margin: 0;
   line-height: 1.55;
-  font-size: 18px;
+  font-size: clamp(0.9rem, 1.2vw, 1rem);
   color: #24344b;
 }
 
@@ -104,14 +104,14 @@
 
 .textBlock h4 {
   margin: 0 0 10px;
-  font-size: 32px;
+  font-size: clamp(1.2rem, 2vw, 1.6rem);
   font-family: "Space Grotesk", "Segoe UI", sans-serif;
 }
 
 .textBlock p {
   margin: 0;
   line-height: 1.6;
-  font-size: 18px;
+  font-size: clamp(0.9rem, 1.15vw, 1rem);
   color: #253852;
 }
 
@@ -125,7 +125,7 @@
 .whyUs h3 {
   margin: 0 0 14px;
   text-transform: uppercase;
-  font-size: 44px;
+  font-size: clamp(1.4rem, 2.6vw, 2rem);
   font-family: "Space Grotesk", "Segoe UI", sans-serif;
 }
 
@@ -138,7 +138,7 @@
 }
 
 .whyUs li {
-  font-size: 22px;
+  font-size: clamp(0.9rem, 1.2vw, 1rem);
   color: #1e314d;
   display: flex;
   align-items: center;
@@ -200,7 +200,7 @@
   gap: 12px;
   flex-wrap: wrap;
   padding: 14px 24px;
-  font-size: 20px;
+  font-size: clamp(0.82rem, 1.1vw, 0.95rem);
 }
 
 .copyright p {

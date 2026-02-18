@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 function App() {
   const HomePage = React.lazy(() => import("./pages/home/Home"));
   const AboutPage = React.lazy(() => import("./pages/about/About"));
+  const GalleryPage = React.lazy(() => import("./pages/gallery/Galley"));
   const ContactPage = React.lazy(() => import("./pages/contact us/Contact"));
   const Header = React.lazy(() => import("./components/header/Header"));
   const Footer = React.lazy(() => import("./components/footer/Footer"));
@@ -16,6 +17,7 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/home" element={<HomePage />} />
           <Route path="/about" element={<AboutPage />} />
+          <Route path="/gallery" element={<GalleryPage />} />
           <Route path="/contact" element={<ContactPage />} />
         </Routes>
         <Footer />

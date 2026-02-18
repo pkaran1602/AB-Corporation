@@ -1,0 +1,245 @@
+.page {
+  background:
+    radial-gradient(circle at 8% 0%, #ecf4ff 0, #e9f0fa 34%, transparent 55%),
+    radial-gradient(circle at 100% 18%, #fff5d8 0, transparent 42%),
+    #e5ebf3;
+  color: #12253f;
+}
+
+.hero {
+  position: relative;
+  min-height: clamp(260px, 34vw, 420px);
+  display: flex;
+  align-items: flex-end;
+  padding: clamp(28px, 5.8vw, 64px) 24px;
+  background-image:
+    linear-gradient(112deg, rgba(10, 29, 50, 0.84), rgba(10, 29, 50, 0.28)),
+    url("https://images.unsplash.com/photo-1556740749-887f6717d7e4?auto=format&fit=crop&w=1800&q=80");
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+.heroOverlay {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 88% 24%, rgba(232, 193, 48, 0.28), transparent 42%),
+    linear-gradient(to top, rgba(9, 20, 38, 0.3), transparent 46%);
+}
+
+.heroContent {
+  position: relative;
+  z-index: 1;
+  max-width: 1180px;
+  margin: 0 auto;
+  width: 100%;
+  color: #f3f8ff;
+}
+
+.heroContent p {
+  margin: 0;
+  font-size: 0.78rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #f7d770;
+}
+
+.heroContent h1 {
+  margin: 8px 0 0;
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  line-height: 1.05;
+  font-family: "Space Grotesk", "Segoe UI", sans-serif;
+}
+
+.heroContent span {
+  display: block;
+  margin-top: 10px;
+  color: #dce7f6;
+  font-size: clamp(0.92rem, 1.15vw, 1.02rem);
+}
+
+.contactSection {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 38px 24px 56px;
+}
+
+.headline h2 {
+  margin: 0;
+  font-size: clamp(1.6rem, 2.7vw, 2.3rem);
+  font-family: "Space Grotesk", "Segoe UI", sans-serif;
+}
+
+.headline p {
+  margin: 8px 0 0;
+  max-width: 680px;
+  color: #465f7f;
+  line-height: 1.55;
+  font-size: 0.95rem;
+}
+
+.layout {
+  margin-top: 24px;
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(260px, 0.8fr);
+  gap: 18px;
+}
+
+.offices {
+  display: grid;
+  gap: 14px;
+}
+
+.officeCard {
+  border: 1px solid #d2dcea;
+  border-radius: 18px;
+  padding: 18px;
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.88), rgba(245, 249, 255, 0.78));
+  box-shadow: 0 12px 30px rgba(21, 36, 58, 0.12);
+  backdrop-filter: blur(1px);
+}
+
+.officeHead {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.marker {
+  width: 36px;
+  height: 36px;
+  border-radius: 11px;
+  display: grid;
+  place-items: center;
+  background: #1d304b;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.18);
+}
+
+.marker span {
+  width: 0;
+  height: 0;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-bottom: 13px solid #f7cf59;
+  transform: rotate(28deg) translateX(1px);
+}
+
+.flag {
+  margin: 0;
+  min-width: 44px;
+  border-radius: 999px;
+  border: 1px solid #c8d4e4;
+  background: #f7fbff;
+  color: #214067;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  line-height: 1;
+  text-align: center;
+  padding: 6px 8px;
+}
+
+.officeHead h3 {
+  margin: 0;
+  font-size: 1.06rem;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+}
+
+.company {
+  margin: 14px 0 0;
+  font-size: 0.97rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+
+.address {
+  margin-top: 8px;
+}
+
+.address p {
+  margin: 0;
+  line-height: 1.56;
+  color: #253e5d;
+  font-size: 0.98rem;
+}
+
+.quickInfo {
+  border-radius: 18px;
+  border: 1px solid #d2dcea;
+  background: linear-gradient(160deg, rgba(18, 36, 59, 0.97), rgba(28, 55, 86, 0.94));
+  box-shadow: 0 16px 35px rgba(14, 25, 39, 0.2);
+  color: #eaf2ff;
+  padding: 18px;
+  height: fit-content;
+}
+
+.quickInfo h3 {
+  margin: 0;
+  font-size: 1.08rem;
+  letter-spacing: 0.02em;
+}
+
+.infoList {
+  margin-top: 14px;
+  display: grid;
+  gap: 10px;
+}
+
+.infoCard {
+  border: 1px solid rgba(220, 236, 255, 0.22);
+  border-radius: 14px;
+  padding: 12px;
+  background: linear-gradient(155deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.03));
+}
+
+.infoCard p {
+  margin: 0;
+  font-size: 0.82rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #9fc3f8;
+  font-weight: 700;
+}
+
+.infoCard span {
+  display: block;
+  margin-top: 5px;
+  line-height: 1.45;
+  font-size: 0.98rem;
+  color: #f0f6ff;
+}
+
+@media (max-width: 980px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+
+  .quickInfo {
+    order: -1;
+  }
+}
+
+@media (max-width: 680px) {
+  .hero {
+    min-height: 215px;
+    padding: 24px 16px;
+  }
+
+  .contactSection {
+    padding: 26px 16px 42px;
+  }
+
+  .officeCard,
+  .quickInfo {
+    padding: 14px;
+    border-radius: 14px;
+  }
+
+  .address p,
+  .infoCard span {
+    font-size: 0.93rem;
+  }
+}

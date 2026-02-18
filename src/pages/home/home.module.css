@@ -43,14 +43,14 @@
 
 .heroContent h2 {
   margin: 0;
-  font-size: clamp(30px, 5vw, 58px);
+  font-size: clamp(1.9rem, 4vw, 3rem);
   line-height: 1.05;
   font-family: "Space Grotesk", "Segoe UI", sans-serif;
 }
 
 .heroContent p {
   margin: 12px 0 0;
-  font-size: 18px;
+  font-size: clamp(0.95rem, 1.35vw, 1.05rem);
   color: #d9e7f6;
 }
 
@@ -97,8 +97,8 @@
 
 .welcomeContent h3 {
   margin: 0 0 16px;
-  font-size: clamp(28px, 3vw, 46px);
-  line-height: 1;
+  font-size: clamp(1.5rem, 2.8vw, 2.2rem);
+  line-height: 1.1;
   font-family: "Space Grotesk", "Segoe UI", sans-serif;
 }
 
@@ -106,14 +106,15 @@
   margin: 0 0 14px;
   line-height: 1.55;
   color: #27364a;
-  font-size: 20px;
+  font-size: clamp(0.92rem, 1.2vw, 1rem);
 }
 
 .readMore {
   display: inline-block;
   margin-top: 8px;
   border: 1px solid #bcc9dc;
-  padding: 12px 28px;
+  padding: 10px 22px;
+  font-size: 0.92rem;
   border-radius: 14px;
   background: linear-gradient(135deg, #ffffff, #eaf0f8);
   color: #173053;
@@ -135,7 +136,7 @@
 .rangeHead h3 {
   margin: 0;
   color: #c81f1f;
-  font-size: clamp(30px, 3vw, 48px);
+  font-size: clamp(1.45rem, 2.5vw, 2rem);
   font-family: "Space Grotesk", "Segoe UI", sans-serif;
   padding-bottom: 18px;
   border-bottom: 2px solid #c7ced9;
@@ -164,13 +165,13 @@
 
 .productCard h4 {
   margin: 0 0 8px;
-  font-size: 24px;
+  font-size: clamp(1rem, 1.5vw, 1.2rem);
 }
 
 .productCard p {
   margin: 0;
   color: #55647a;
-  font-size: 15px;
+  font-size: 0.9rem;
   line-height: 1.45;
 }
 
@@ -223,20 +224,7 @@
   font-size: 20px;
 }
 
-.copyright {
-  background: #e7c52a;
-  color: #1f212a;
-  display: flex;
-  justify-content: space-between;
-  gap: 12px;
-  flex-wrap: wrap;
-  padding: 14px 24px;
-  font-size: 20px;
-}
 
-.copyright p {
-  margin: 0;
-}
 
 @keyframes riseIn {
   from {
