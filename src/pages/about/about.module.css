@@ -1,0 +1,218 @@
+.page {
+  background: #edf2f9;
+  color: #17243a;
+}
+
+.hero {
+  position: relative;
+  min-height: clamp(260px, 34vw, 420px);
+  display: flex;
+  align-items: flex-end;
+  padding: 34px 5vw;
+  background-image:
+    linear-gradient(95deg, rgba(8, 23, 42, 0.78), rgba(8, 23, 42, 0.25)),
+    url("https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=1800&q=80");
+  background-size: cover;
+  background-position: center;
+}
+
+.heroOverlay {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 85% 12%, rgba(247, 211, 75, 0.26), transparent 48%);
+}
+
+.heroContent {
+  position: relative;
+  z-index: 1;
+  color: #f8fbff;
+  max-width: 760px;
+}
+
+.eyebrow {
+  margin: 0 0 10px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #f2cd58;
+}
+
+.heroContent h2 {
+  margin: 0;
+  font-size: clamp(34px, 5vw, 64px);
+  font-family: "Space Grotesk", "Segoe UI", sans-serif;
+  line-height: 1.05;
+}
+
+.heroContent p {
+  margin: 12px 0 0;
+  color: #dde9f7;
+  font-size: 18px;
+}
+
+.contentWrap {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 46px 24px 54px;
+  display: grid;
+  gap: 26px;
+}
+
+.introBlock {
+  display: grid;
+  grid-template-columns: minmax(300px, 1fr) minmax(220px, 360px);
+  gap: 22px;
+  align-items: start;
+  background: #ffffff;
+  border-radius: 22px;
+  padding: 26px;
+  box-shadow: 0 20px 40px rgba(17, 32, 53, 0.12);
+}
+
+.introBlock h3 {
+  margin: 0 0 14px;
+  font-size: clamp(30px, 4vw, 52px);
+  line-height: 1;
+  text-transform: uppercase;
+  font-family: "Space Grotesk", "Segoe UI", sans-serif;
+}
+
+.introBlock p {
+  margin: 0;
+  line-height: 1.55;
+  font-size: 18px;
+  color: #24344b;
+}
+
+.sideImage {
+  width: 100%;
+  min-height: 250px;
+  border-radius: 16px;
+  background:
+    radial-gradient(circle at 30% 20%, #f0ffe0, #b9e489 45%, #70b85a),
+    linear-gradient(160deg, #ffffff, #d5dce8);
+  box-shadow: inset 0 0 0 1px #d9e4ef;
+}
+
+.textBlock {
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 24px 26px;
+  box-shadow: 0 12px 34px rgba(25, 40, 64, 0.09);
+}
+
+.textBlock h4 {
+  margin: 0 0 10px;
+  font-size: 32px;
+  font-family: "Space Grotesk", "Segoe UI", sans-serif;
+}
+
+.textBlock p {
+  margin: 0;
+  line-height: 1.6;
+  font-size: 18px;
+  color: #253852;
+}
+
+.whyUs {
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 26px;
+  box-shadow: 0 12px 34px rgba(25, 40, 64, 0.09);
+}
+
+.whyUs h3 {
+  margin: 0 0 14px;
+  text-transform: uppercase;
+  font-size: 44px;
+  font-family: "Space Grotesk", "Segoe UI", sans-serif;
+}
+
+.whyUs ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 10px;
+}
+
+.whyUs li {
+  font-size: 22px;
+  color: #1e314d;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.whyUs li::before {
+  content: "➜";
+  color: #d8ae1e;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.contactBand {
+  background: linear-gradient(135deg, #0f4e80, #0d3e66);
+  color: #eff5ff;
+  padding: 48px 24px 36px;
+}
+
+.contactGrid {
+  max-width: 1240px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 24px;
+}
+
+.contactGrid h4 {
+  margin: 0 0 12px;
+  font-size: 34px;
+  color: #ffffff;
+}
+
+.contactGrid p {
+  margin: 6px 0;
+  line-height: 1.45;
+  color: #ddedff;
+  font-size: 19px;
+}
+
+.contactGrid ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 8px;
+}
+
+.contactGrid li {
+  font-size: 19px;
+  color: #ecf5ff;
+}
+
+.copyright {
+  background: #e7c52a;
+  color: #1f212a;
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+  padding: 14px 24px;
+  font-size: 20px;
+}
+
+.copyright p {
+  margin: 0;
+}
+
+@media (max-width: 920px) {
+  .introBlock {
+    grid-template-columns: 1fr;
+  }
+
+  .heroContent p {
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,149 @@
+:global(body) {
+  margin: 0;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 30;
+  background: #f6f7fb;
+  border-bottom: 1px solid #d8deea;
+  box-shadow: 0 10px 28px rgba(18, 29, 43, 0.08);
+}
+
+.top {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 18px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+}
+
+.brandWrap {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.brandMark {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 1px;
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.markA {
+  color: #ee3034;
+}
+
+.markB {
+  color: #49c164;
+}
+
+.markC {
+  color: #2db6e9;
+}
+
+.brandText h1 {
+  margin: 0;
+  font-size: clamp(28px, 3vw, 58px);
+  line-height: 1;
+  letter-spacing: 0.05em;
+  color: #171a22;
+  font-family: "Space Grotesk", "Segoe UI", sans-serif;
+}
+
+.brandText p {
+  margin: 6px 0 0;
+  font-size: 12px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #68758b;
+  font-weight: 600;
+}
+
+.meta {
+  display: grid;
+  justify-items: end;
+  gap: 8px;
+}
+
+.language {
+  border: 1px solid #c4cfe0;
+  background: #ffffff;
+  color: #1f2d44;
+  border-radius: 999px;
+  padding: 8px 14px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.infoLink {
+  text-decoration: none;
+  color: #1e2a42;
+  font-weight: 600;
+}
+
+.phone {
+  font-size: 36px;
+  line-height: 1;
+  color: #132d5d;
+}
+
+.email {
+  font-size: 18px;
+}
+
+.nav {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  background: #e7c52a;
+  padding: 10px 12px;
+  flex-wrap: wrap;
+}
+
+.navLink {
+  text-decoration: none;
+  color: #10121a;
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 0.08em;
+  font-weight: 700;
+  padding: 8px 12px;
+  border-radius: 8px;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.navLink:hover {
+  background: rgba(255, 255, 255, 0.35);
+  transform: translateY(-1px);
+}
+
+.active {
+  background: #10121a;
+  color: #f5f6fb;
+}
+
+@media (max-width: 980px) {
+  .top {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .meta {
+    justify-items: start;
+  }
+
+  .infoLink {
+    font-size: 18px;
+  }
+
+  .phone {
+    font-size: 20px;
+  }
+}
