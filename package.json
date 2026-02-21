@@ -2,6 +2,7 @@
   "name": "timberlane",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://pkaran1602.github.io/AB-Corporation",
   "dependencies": {
     "@testing-library/dom": "^10.4.1",
     "@testing-library/jest-dom": "^6.9.1",

@@ -12,7 +12,7 @@ function App() {
   const EmailPage = React.lazy(() => import("./pages/email us/Email"));
 
   return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <React.Suspense fallback={<div>Loading...</div>}>
         <Header />
         <Routes>
