@@ -2,7 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 import styles from "./home.module.css";
 import welcomeImage from "../../assets/home_img1.jpg";
-import Footer from "../../components/footer/Footer";
 
 const products = [
   "Plastic scrap",
