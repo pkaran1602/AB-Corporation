@@ -29,7 +29,7 @@ const Products = () => {
           <h2>Recycling and Scrap Material Products</h2>
           <p>
             A modern showcase of plastic and metal categories. Replace these
-            temporary internet images with your own photos anytime.
+            temporary internet images with your own photo anytime.
           </p>
         </div>
       </section>
