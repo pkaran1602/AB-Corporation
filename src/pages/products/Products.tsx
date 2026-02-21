@@ -62,7 +62,7 @@ const Products = () => {
         <div className={styles.grid}>
           {filteredProducts.map((item) => (
             <article key={item.id} className={styles.card}>
-              <img src={item.image} alt={item.title} loading="lazy" />
+              <img src={item.image} alt="" loading="lazy" />
               <div className={styles.cardInfo}>
                 <p>{item.type}</p>
               </div>
