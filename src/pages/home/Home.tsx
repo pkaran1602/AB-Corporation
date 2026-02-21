@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import styles from "./home.module.css";
+import welcomeImage from "../../assets/home_img1.jpg";
 import Footer from "../../components/footer/Footer";
 
 const products = [
@@ -34,11 +35,9 @@ const Home = () => {
       </section>
 
       <section className={styles.welcome}>
-        <div
-          className={styles.welcomeImage}
-          role="img"
-          aria-label="Industrial gears placeholder"
-        />
+        <div className={styles.welcomeImage} aria-label="Industrial gears image">
+          <img src={welcomeImage} alt="Industrial gears and metal components" />
+        </div>
         <div className={styles.welcomeContent}>
           <h3>Welcome To AB Corporation</h3>
           <p>

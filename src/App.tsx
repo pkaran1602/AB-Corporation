@@ -8,6 +8,8 @@ function App() {
   const ContactPage = React.lazy(() => import("./pages/contact us/Contact"));
   const Header = React.lazy(() => import("./components/header/Header"));
   const Footer = React.lazy(() => import("./components/footer/Footer"));
+  const Products = React.lazy(() => import("./pages/products/Products"));
+  const EmailPage = React.lazy(() => import("./pages/email us/Email"));
 
   return (
     <Router>
@@ -19,6 +21,8 @@ function App() {
           <Route path="/about" element={<AboutPage />} />
           <Route path="/gallery" element={<GalleryPage />} />
           <Route path="/contact" element={<ContactPage />} />
+          <Route path="/products" element={<Products />} />
+          <Route path="/email" element={<EmailPage />} />
         </Routes>
         <Footer />
       </React.Suspense>

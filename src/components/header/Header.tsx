@@ -9,7 +9,6 @@ const links = [
   { to: "/gallery", label: "Gallery" },
   { to: "/contact", label: "Contact Us" },
   { to: "/email", label: "Email Us" },
-  { to: "/sitemap", label: "Sitemap" },
 ];
 
 const Header = () => {
